@@ -57,18 +57,6 @@ Train vs Test2: There is a significant difference in the distribution of NO2(GT)
 
 ### 3. KS Test for All Features
 
-| Feature            | KS Statistic (test1)  | P-value (test1)  | KS Statistic (test2)  | P-value (test2)  |
-|--------------------|-----------------------|------------------|-----------------------|------------------|
-| PT08.S1(CO)        | 0.032813              | 0.490012         | 0.127500              | 1.65e-09         |
-| NMHC(GT)           | 0.012812              | 0.999921         | 0.227187              | 1.98e-29         |
-| C6H6(GT)           | 0.020938              | 0.938445         | 0.142500              | 8.89e-12         |
-| PT08.S2(NMHC)      | 0.021562              | 0.923540         | 0.141875              | 1.12e-11         |
-| NOx(GT)            | 0.017500              | 0.988482         | 0.524062              | 4.13e-162        |
-| PT08.S3(NOx)       | 0.034375              | 0.430351         | 0.322813              | 1.43e-59         |
-| NO2(GT)            | 0.019062              | 0.972194         | 0.407500              | 7.20e-96         |
-| PT08.S4(NO2)       | 0.020000              | 0.957373         | 0.597187              | 1.35e-214        |
-| PT08.S5(O3)        | 0.028125              | 0.685568         | 0.136563              | 7.54e-11         |
-
 Kolmogorov-Smirnov (KS) tests indicate a significant covariate shift between the training data and test2, but not test1. Most features in test2 showed high KS statistics and p-values < 0.05 compared to the training set.
 
 The NO2(GT) feature highlights this difference. The comparison between train and test2 showed a significant distributional divergence (KS=0.3689, p=0), while the comparison between train and test1 indicated high similarity (KS=0.0171, p=0.9971).
