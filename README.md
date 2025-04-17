@@ -31,7 +31,7 @@
 
 ### 4. Interpretation
 
-There is a statistically significant difference in click-through rates between the two ad positions.
+Yes, there is a statistically significant difference in click-through rates between the two groups. The p-value of ~0.00005 is less than the significance level of 0.05, indicating that the observed difference in click-through rates is unlikely to have occurred by random chance. This suggests that the ad position has a significant impact on user engagement.
 
 ---
 
